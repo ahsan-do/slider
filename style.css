@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+
+.container{
+    MAX-height: 850PX;
+    height: 100%;
+    max-width: 1400px;
+    width: 100% ;
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px 0;
+}
+
+.container .content .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.list {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.tab {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.content .list label{
+    height: 60px;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 0 14px;
+    color: rgb(175, 174, 174);
+    transition: all 0.3s ease;
+}
+
+.content .list label:hover{
+   color: rgb(71, 71, 71);
+}
+
+.content .indicator{
+    position: absolute;
+    border-radius: 100px;
+    height: 8px;
+    width: 8px;
+    top: 45px;
+    left: 400px;
+    background-color: rgb(0, 0, 0);
+
+}
+
+#wbands:checked ~ .list .wbands,
+#sandwiches:checked ~ .list  .sandwiches,
+#smoothies:checked ~ .list .smoothies,
+#juices:checked ~ .list .juices,
+#acai:checked ~ .list .acai,
+#coffee:checked ~ .list .coffee {
+ color: #333;
+}
+
+#wbands:checked ~ .list .indicator{
+    top: 45px;
+    left: 320px;
+
+} 
+
+#sandwiches:checked ~.list  .indicator{
+    left: 600px;
+
+}
+
+#smoothies:checked ~.list  .indicator{
+    left: 800px;
+
+}
+
+#juices:checked ~ .list .indicator{
+    left: 960px;
+
+}
+
+#acai:checked ~ .list .indicator{
+    left: 1080px;
+
+}
+
+#coffee:checked ~ .list .indicator{
+    left: 1190px;
+
+}
+
+.container input[type="radio"]{
+    display: none;
+}
+
+/* SLIDER */
+
+.card-image{
+    position: relative;
+    height: 350px;
+    width: 350px;
+}
+
+.card-image .card-img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.slide-container{
+    max-width: 1250px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.slide-content{
+    margin: 0 40px;
+    height: 750px;
+    overflow: hidden;
+}
+
+.image-content, .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 10px 14px;   
+}
+
+.name{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.description{
+    font-size: 16px;
+    color: rgb(27, 27, 27);
+    font-weight: 400;
+}
+
+.dressing{
+    color: rgb(27, 27, 27);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tag{
+    font-weight: 700;
+    color: rgb(27, 27, 27);
+    font-size: 16px;
+}
+
+
+.btn{
+    position: absolute;
+    bottom: 25px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    width: 200px;
+    border: 0px;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: rgb(169, 227, 253);
+    transition: all 0.3s ease;
+}
+
+i{
+    margin-left: 15px;
+}
+
+.btn:hover{
+    color:#fff;
+    background-color: #333;
+}
+
+
+
+
+.slide-container .products{
+    display: none;
+}
+
+.slide-container .warmBowlsAndSalads{
+    display: block;
+}
+
+#wbands:checked ~ .slide-container .warmBowlsAndSalads,
+#sandwiches:checked ~ .slide-container  .SandWiches,
+#smoothies:checked ~ .slide-container .Smoothies,
+#juices:checked ~ .slide-container .Juices,
+#acai:checked ~ .slide-container .Acai,
+#coffee:checked ~ .slide-container .Coffee {
+ display: block;
+}
+
+#sandwiches:checked ~ .slide-container  .warmBowlsAndSalads,
+#smoothies:checked ~ .slide-container .warmBowlsAndSalads,
+#juices:checked ~ .slide-container .warmBowlsAndSalads,
+#acai:checked ~ .slide-container .warmBowlsAndSalads,
+#coffee:checked ~ .slide-container .warmBowlsAndSalads {
+ display: none;
+}
+
+
+
+
+@media screen and (min-width: 1050px) and (max-width: 1200px) {
+  .content .list label{
+    font-size: 30px;
+    padding: 0 14px;
+    }
+    
+    .card-image{
+        height: 270px;
+        width: 270px;
+    }
+    
+    
+    .image-content, .card-content{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding: 8px 12px;   
+    }
+    
+    .name{
+        font-size: 22px;
+    }
+    
+    .description{
+        font-size: 15px;
+    }
+    
+    .dressing{
+        font-size: 15px;
+    }
+
+
+    .content .indicator{
+        top: 55px;
+        left: 245px;
+    
+    }
+
+    #wbands:checked ~ .list .indicator{
+        left: 245px;
+    
+    }
+    
+    #sandwiches:checked ~.list  .indicator{
+        left: 470px;
+    
+    }
+    
+    #smoothies:checked ~.list  .indicator{
+        left: 630px;
+    
+    }
+    
+    #juices:checked ~ .list .indicator{
+        left: 765px;
+    
+    }
+    
+    #acai:checked ~ .list .indicator{
+        left: 850px;
+    
+    }
+    
+    #coffee:checked ~ .list .indicator{
+        left: 940px;
+    
+    }
+    
+}
+    
+@media screen and (min-width: 790px) and (max-width: 1050px) {
+    
+    
+    .content .list label{
+      font-size: 30px;
+      padding: 0 12px;
+      }
+      
+      .card-image{
+          height: 270px;
+          width: 270px;
+      }
+      
+      
+      .image-content, .card-content{
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+          padding: 6px 10px;   
+      }
+      
+      .name{
+          font-size: 20px;
+      }
+      
+      .description{
+          font-size: 14px;
+      }
+      
+      .dressing{
+          font-size: 14px;
+      }
+
+      .content .indicator{
+        top: 30px;
+        left: 200px;
+    
+    }
+
+    #wbands:checked ~ .list .indicator{
+        left: 200px;
+    
+    }
+    
+    #sandwiches:checked ~.list  .indicator{
+        left: 365px;
+    
+    }
+    
+    #smoothies:checked ~.list  .indicator{
+        left: 500px;
+    
+    }
+    
+    #juices:checked ~ .list .indicator{
+        left: 610px;
+    
+    }
+    
+    #acai:checked ~ .list .indicator{
+        left: 680px;
+    
+    }
+    
+    #coffee:checked ~ .list .indicator{
+        left: 750px;
+    
+    }
+      
+  }
+
+  @media screen and (min-width: 520px) and (max-width: 790px) {
+    
+
+    .content .list label{
+      font-size: 24px;
+      padding: 0 12px;
+      }
+      
+      .card-image{
+          height: 200px;
+          width: 200px;
+      }
+      
+      
+      .image-content, .card-content{
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+          padding: 6px 10px;   
+      }
+      
+      .name{
+          font-size: 20px;
+      }
+      
+      .description{
+          font-size: 14px;
+      }
+      
+      .dressing{
+          font-size: 14px;
+      }
+
+      .content .indicator{
+        top: 30px;
+        left: 200px;
+    
+    }
+
+    #wbands:checked ~ .list .indicator{
+        left: 200px;
+    
+    }
+    
+    #sandwiches:checked ~.list  .indicator{
+        left: 365px;
+    
+    }
+    
+    #smoothies:checked ~.list  .indicator{
+        left: 500px;
+    
+    }
+    
+    #juices:checked ~ .list .indicator{
+        left: 610px;
+    
+    }
+    
+    #acai:checked ~ .list .indicator{
+        left: 680px;
+    
+    }
+    
+    #coffee:checked ~ .list .indicator{
+        left: 750px;
+    
+    }
+      
+  }
+
