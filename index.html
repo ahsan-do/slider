@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SLIDER</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
+    <!--Swiper-Slider-CSS-->
     <link rel="stylesheet" href="./swiper-bundle.min.css">
-
+    <!-- arrow-right cdn from font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
     <div class="container">
         <div class="content">
+
+<!----------------------------------------------------------------- Nav-Tabs ---------------------------------------------------------------------------->
+
             <input type="radio" name="indicator" checked id="wbands">
             <input type="radio" name="indicator" id="sandwiches">
             <input type="radio" name="indicator" id="smoothies">
@@ -24,6 +28,7 @@
             <div class="list">
                 <label for="wbands" class="wbands tab">
                     <span class="topic">Warm Bowls & Salads</span>
+                    
                 </label>
                 <label for="sandwiches" class="sandwiches tab">
                     <span class="topic">Sandwiches</span>
@@ -44,14 +49,13 @@
             </div>
 
 
-            <!-- Slider -->
+<!----------------------------------------------------------------- Slider ---------------------------------------------------------------------------->
 
 
             <div class="slide-container swiper">
                 <div class="slide-content warmBowlsAndSalads products">
 
-                    <!-------------------------------------------------------------warmBowlandSalads---------------------------------------------------------------------->
-
+<!------------------------------------------------------------- Warm Bowl and Salads ---------------------------------------------------------------------->
 
                     <div class="card-wrapper swiper-wrapper">
                         <div class="card swiper-slide">
@@ -215,8 +219,7 @@
                     <div class="swiper-button-prev btn-prev"></div>
                 </div>
 
-
-                <!-------------------------------------------------------------SandWiches---------------------------------------------------------------------->
+<!-------------------------------------------------------------SandWiches---------------------------------------------------------------------->
 
                 <div class="slide-content SandWiches products">
 
@@ -312,8 +315,7 @@
                     <div class="swiper-button-prev"></div>
                 </div>
 
-                <!-------------------------------------------------------------Smoothies---------------------------------------------------------------------->
-
+<!-------------------------------------------------------------Smoothies---------------------------------------------------------------------->
 
                 <div class="slide-content Smoothies products">
 
@@ -838,7 +840,7 @@
                         </div>
                 </div>
 
-      <!-------------------------------------------------------------Coffee---------------------------------------------------------------------->
+<!-------------------------------------------------------------Coffee---------------------------------------------------------------------->
 
                 <div class="slide-content Coffee products">
                     <div class="card-wrapper swiper-wrapper">

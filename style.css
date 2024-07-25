@@ -63,9 +63,7 @@ body{
     position: absolute;
     border-radius: 100px;
     height: 8px;
-    width: 8px;
-    top: 45px;
-    left: 400px;
+    width: 8px; 
     background-color: rgb(0, 0, 0);
 
 }
@@ -81,31 +79,36 @@ body{
 
 #wbands:checked ~ .list .indicator{
     top: 45px;
-    left: 320px;
+    left: 335px;
 
 } 
 
 #sandwiches:checked ~.list  .indicator{
-    left: 600px;
+    top: 45px;
+    left: 610px;
 
 }
 
 #smoothies:checked ~.list  .indicator{
+    top: 45px;
     left: 800px;
 
 }
 
 #juices:checked ~ .list .indicator{
+    top: 45px;
     left: 960px;
 
 }
 
 #acai:checked ~ .list .indicator{
+    top: 45px;
     left: 1080px;
 
 }
 
 #coffee:checked ~ .list .indicator{
+    top: 45px;
     left: 1190px;
 
 }
@@ -227,7 +230,14 @@ i{
 
 
 @media screen and (min-width: 1050px) and (max-width: 1200px) {
-  .content .list label{
+  
+    .container .content .list{
+        
+        justify-content: left;
+    }
+  
+  
+    .content .list label{
     font-size: 30px;
     padding: 0 14px;
     }
@@ -280,17 +290,17 @@ i{
     }
     
     #juices:checked ~ .list .indicator{
-        left: 765px;
+        left: 820px;
     
     }
     
     #acai:checked ~ .list .indicator{
-        left: 850px;
+        left: 940px;
     
     }
     
     #coffee:checked ~ .list .indicator{
-        left: 940px;
+        left: 1050px;
     
     }
     
@@ -298,7 +308,11 @@ i{
     
 @media screen and (min-width: 790px) and (max-width: 1050px) {
     
-    
+    .container .content .list{
+        
+        justify-content: left;
+    }
+
     .content .list label{
       font-size: 30px;
       padding: 0 12px;
@@ -329,39 +343,40 @@ i{
           font-size: 14px;
       }
 
-      .content .indicator{
-        top: 30px;
-        left: 200px;
-    
-    }
 
     #wbands:checked ~ .list .indicator{
+        top: 40px;
         left: 200px;
     
     }
     
     #sandwiches:checked ~.list  .indicator{
-        left: 365px;
+        top: 40px;
+        left: 440px;
     
     }
     
     #smoothies:checked ~.list  .indicator{
-        left: 500px;
+        top: 40px;
+        left: 640px;
     
     }
     
     #juices:checked ~ .list .indicator{
-        left: 610px;
+        top: 40px;
+        left: 810px;
     
     }
     
     #acai:checked ~ .list .indicator{
-        left: 680px;
+        top: 40px;
+        left: 920px;
     
     }
     
     #coffee:checked ~ .list .indicator{
-        left: 750px;
+        top: 40px;
+        left: 1040px;
     
     }
       
@@ -369,6 +384,10 @@ i{
 
   @media screen and (min-width: 520px) and (max-width: 790px) {
     
+    .container .content .list{
+        
+        justify-content: left;
+    }
 
     .content .list label{
       font-size: 24px;
@@ -400,41 +419,118 @@ i{
           font-size: 14px;
       }
 
-      .content .indicator{
-        top: 30px;
-        left: 200px;
-    
-    }
 
     #wbands:checked ~ .list .indicator{
+        top:30px;
         left: 200px;
     
     }
     
     #sandwiches:checked ~.list  .indicator{
+        top:30px;
         left: 365px;
     
     }
     
     #smoothies:checked ~.list  .indicator{
+        top:30px;
+        left: 540px;
+    
+    }
+    
+    #juices:checked ~ .list .indicator{
+        top:30px;
+        left: 660px;
+    
+    }
+    
+    #acai:checked ~ .list .indicator{
+        top:30px;
+        left: 760px;
+    
+    }
+    
+    #coffee:checked ~ .list .indicator{
+        top:30px;
+        left: 850px;
+    
+    }
+      
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 520px) {
+    
+    .container .content .list{
+        
+        justify-content: left;
+    }
+
+    .content .list label{
+      font-size: 24px;
+      padding: 0 12px;
+      }
+      
+      .card-image{
+          height: 270px;
+          width: 270px;
+      }
+      
+      
+      .image-content, .card-content{
+          display: flex;
+          flex-direction: column;
+          align-items: left;
+          padding: 6px 10px;   
+      }
+      
+      .name{
+          font-size: 20px;
+      }
+      
+      .description{
+          font-size: 14px;
+      }
+      
+      .dressing{
+          font-size: 14px;
+      }
+
+    #wbands:checked ~ .list .indicator{
+        top:30px;
+        left: 200px;
+    
+    }
+    
+    #sandwiches:checked ~.list  .indicator{
+        top:30px;
+        left: 365px;
+    
+    }
+    
+    #smoothies:checked ~.list  .indicator{
+        top:30px;
         left: 500px;
     
     }
     
     #juices:checked ~ .list .indicator{
+        top:30px;
         left: 610px;
     
     }
     
     #acai:checked ~ .list .indicator{
+        top:30px;
         left: 680px;
     
     }
     
     #coffee:checked ~ .list .indicator{
+        top:30px;
         left: 750px;
     
     }
       
   }
+
 
